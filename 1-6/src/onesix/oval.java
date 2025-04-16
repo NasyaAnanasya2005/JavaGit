@@ -27,12 +27,11 @@ public class oval extends JFrame{
 	
 }
         public static void onRepaint(Graphics g) {
-            g.fillOval(10,10, 200, 200);
+            g.fillOval(10,10, 200, 100);
         }
         public static class GameField extends JPanel{
         @Override
         protected void paintComponent(Graphics g){
-            super.paint(g);
                 onRepaint(g);
         }
 }
